@@ -1,0 +1,23 @@
+{
+  "name": "sandboxed-mcp-file-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A sandboxed MCP file-server with secure workspace operations, search, git-lite, and handoff state.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "demo": "node scripts/demo-client.js",
+    "check": "node --check src/server.js && node --check scripts/demo-client.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "express": "^5.1.0",
+    "dotenv": "^16.6.1",
+    "zod": "^3.25.0"
+  }
+}
